@@ -39,7 +39,7 @@ class Env {
 		);
 		const Environments = db.model(this.model, schema);
     const envObject = await Environments.findOne({ codebase: this.codebase });
-		const envs = envObject.envs;
+		const envs = envObject.get('envs');
     Object.keys(envs).forEach(env => {
       process.env[env] = envs[env];
     })
