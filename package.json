@@ -1,5 +1,5 @@
 {
-  "name": "fetch-mongo-envs",
+  "name": "@zayn-m/fetch-mongo-envs",
   "version": "1.0.0",
   "description": "This library is used to get environments from mongodb",
   "main": "index.js",
@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "mongoose": "^5.12.14"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zayn-m/fetch-mongo-envs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zayn-m/fetch-mongo-envs/issues"
+  },
+  "homepage": "https://github.com/zayn-m/fetch-mongo-envs#readme"
 }
