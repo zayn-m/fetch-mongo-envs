@@ -1,6 +1,6 @@
 {
   "name": "@zayn-m/fetch-mongo-envs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This library is used to get environments from mongodb",
   "main": "index.js",
   "scripts": {

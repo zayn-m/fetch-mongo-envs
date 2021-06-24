@@ -38,8 +38,8 @@ class Env {
 			}
 		);
 		const Environments = db.model(this.model, schema);
-    const envObject = await Environments.findOne({ CODEBASE: this.codebase });
-    Object.keys(envObject).forEach(env => {
+    const envObject = await Environments.findOne({ codebase: this.codebase });
+    Object.keys(envObject.envs).forEach(env => {
       process.env[env] = envObject[env];
     })
     db.close();
