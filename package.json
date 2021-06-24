@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
+  "keywords": ["fetch-mongo-envs", "envs", "mongo"],
   "author": "zayn-m",
   "license": "ISC",
   "dependencies": {
