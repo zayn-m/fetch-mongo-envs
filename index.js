@@ -3,9 +3,16 @@ const Schema = mongoose.Schema;
 
 class Env {
 
-  constructor(codebase, uri) {
+  /**
+   * 
+   * @param {string} codebase 
+   * @param {string} uri 
+   * @param {string} model 
+   */
+  constructor(codebase, uri, model) {
     this.codebase = codebase;
     this.uri = uri;
+    this.model = model;
   }
 
 	async build() {
@@ -30,7 +37,7 @@ class Env {
 				strict: false
 			}
 		);
-		const Environments = db.model('environments', schema);
+		const Environments = db.model(this.model, schema);
     const envObject = await Environments.findOne({ CODEBASE: this.codebase });
     Object.keys(envObject).forEach(env => {
       process.env[env] = envObject[env];
