@@ -1,0 +1,15 @@
+{
+  "name": "fetch-mongo-envs",
+  "version": "1.0.0",
+  "description": "This library is used to get environments from mongodb",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "zayn-m",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.12.14"
+  }
+}
