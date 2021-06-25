@@ -5,7 +5,7 @@ Small helper library to fetch environment variables from Mongodb and set these i
 Using npm:
 
 ```bash
-$ npm install axios
+$ npm install fetch-mongo-envs
 ```
 
 ## Example
