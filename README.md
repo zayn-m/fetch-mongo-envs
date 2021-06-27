@@ -13,7 +13,7 @@ $ npm install fetch-mongo-envs
 ```js
 (async() => {
   const { Env } = require('fetch-mongo-envs');
-  const env = new Env(yourCodebase, yourMongoUri, yourModel);
+  const env = new Env(yourMongoUri, yourModel, codebase, envType);
   await env.build();
 })()
 ```
