@@ -1,5 +1,5 @@
  ## Description
-Small helper library to fetch environment variables from Mongodb and set these in project.
+Lightweight helper library to fetch environment variables from Mongodb and set these in project.
 
 ## Installing
 Using npm:
@@ -16,4 +16,18 @@ $ npm install fetch-mongo-envs
   const env = new Env(yourMongoUri, yourModel, codebase, envType);
   await env.build();
 })()
+```
+
+## Note
+Document schema should be like this:
+```json
+{
+  codebase: "project-name",
+  envType: "production",
+  envs: {
+    FOO: "",
+    BAR: "",
+    ...
+  }
+}
 ```
