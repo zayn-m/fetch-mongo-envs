@@ -13,14 +13,14 @@ $ npm install fetch-mongo-envs
 ```js
 (async() => {
   const { Env } = require('fetch-mongo-envs');
-  const env = new Env(yourMongoUri, yourModel, codebase, envType);
+  const env = new Env(yourMongoUri, yourModel || 'environments', codebase || 'project-name', envType || 'production');
   await env.build();
 })()
 ```
 
 ## Note
 Document schema should be like this:
-```json
+```
 {
   codebase: "project-name",
   envType: "production",
